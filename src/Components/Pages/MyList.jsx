@@ -11,7 +11,9 @@ const MyList = () => {
   const [mySpots, setMySpots] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:9000/alltouristspotss/${userEmail}`)
+    fetch(
+      `https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/alltouristspotss/${userEmail}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setMySpots(data);
@@ -24,12 +26,15 @@ const MyList = () => {
   }, [userEmail]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:9000/alltouristspot/${id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
+    fetch(
+      `https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/alltouristspot/${id}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
       .then((res) => res.json())
       .then(() => {
         const updatedSpots = mySpots.filter((spot) => spot._id !== id);

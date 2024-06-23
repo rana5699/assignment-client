@@ -31,13 +31,16 @@ const AddSpost = () => {
     };
 
     // save spots in database
-    fetch("http://localhost:9000/alltouristspots", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newTouristSpot),
-    })
+    fetch(
+      "https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/alltouristspots",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newTouristSpot),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log("data:", data);

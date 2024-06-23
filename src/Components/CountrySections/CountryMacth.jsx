@@ -14,7 +14,9 @@ const CountryMatch = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:9000/countryname/${nameConvention}`)
+    fetch(
+      `https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/countryname/${nameConvention}`
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.error) {

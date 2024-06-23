@@ -9,7 +9,9 @@ const TouristContainer = () => {
   const [touristSpots, setTouristSpots] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:9000/touristspot")
+    fetch(
+      "https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/touristspot"
+    )
       .then((res) => res.json())
       .then((spots) => {
         setTouristSpots(spots);

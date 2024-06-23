@@ -57,13 +57,16 @@ const UpdateSpot = () => {
       totalVisitorsPerYear,
     };
 
-    fetch(`http://localhost:9000/updatespot/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(updatedSpot),
-    })
+    fetch(
+      `https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/updatespot/${id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updatedSpot),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         toast.success("Successfully Update Your Spot ");
