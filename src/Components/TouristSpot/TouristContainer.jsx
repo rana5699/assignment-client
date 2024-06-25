@@ -7,7 +7,6 @@ const TouristContainer = () => {
   const [loading, setLoading] = useState(true);
 
   const [touristSpots, setTouristSpots] = useState([]);
-  console.log("touristSpots:", touristSpots);
 
   useEffect(() => {
     const fetchTouristSpots = async () => {
