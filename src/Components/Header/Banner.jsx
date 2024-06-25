@@ -18,20 +18,20 @@ const Banner = () => {
   console.log("banner:", banner);
 
   useEffect(() => {
-    const fecthBanner = async () => {
+    const fetchBanner = async () => {
       try {
         const res = await fetch(
           "https://assignrmnt-server.vercel.app/countrynames"
         );
         const data = await res.json();
         setBanner(data);
-        setIsLoading(false);
       } catch (error) {
         console.error("Error loading the banner:", error);
+      } finally {
         setIsLoading(false);
       }
     };
-    fecthBanner();
+    fetchBanner();
   }, []);
 
   if (isLoading) {

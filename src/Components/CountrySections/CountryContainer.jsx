@@ -8,12 +8,20 @@ const CountryContainer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://assignrmnt-server.vercel.app/countrynames")
-      .then((res) => res.json())
-      .then((data) => {
+    const fetchNames = async () => {
+      try {
+        const res = await fetch(
+          "https://assignrmnt-server.vercel.app/countrynames"
+        );
+        const data = await res.json();
         setNames(data);
+      } catch (error) {
+        console.error("Error fetching country names:", error);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+    fetchNames();
   }, []);
 
   //   loading && <Loader />
