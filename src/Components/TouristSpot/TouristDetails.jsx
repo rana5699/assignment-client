@@ -11,7 +11,7 @@ const TouristDetails = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://assignment-server-side-alpha.vercel.app/touristspot/${id}`)
+    fetch(`https://assignrmnt-server.vercel.app/touristspot/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setDataInfo(data);

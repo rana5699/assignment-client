@@ -21,7 +21,7 @@ const Banner = () => {
     const fecthBanner = async () => {
       try {
         const res = await fetch(
-          "https://assignment-server-side-alpha.vercel.app/countrynames"
+          "https://assignrmnt-server.vercel.app/countrynames"
         );
         const data = await res.json();
         setBanner(data);

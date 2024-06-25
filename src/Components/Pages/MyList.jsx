@@ -11,9 +11,7 @@ const MyList = () => {
   const [mySpots, setMySpots] = useState([]);
 
   useEffect(() => {
-    fetch(
-      `https://assignment-server-side-alpha.vercel.app/alltouristspotss/${userEmail}`
-    )
+    fetch(`https://assignrmnt-server.vercel.app/alltouristspotss/${userEmail}`)
       .then((res) => res.json())
       .then((data) => {
         setMySpots(data);
@@ -26,15 +24,12 @@ const MyList = () => {
   }, [userEmail]);
 
   const handleDelete = (id) => {
-    fetch(
-      `https://assignment-server-side-alpha.vercel.app/alltouristspot/${id}`,
-      {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    )
+    fetch(`https://assignrmnt-server.vercel.app/alltouristspot/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
       .then((res) => res.json())
       .then(() => {
         const updatedSpots = mySpots.filter((spot) => spot._id !== id);

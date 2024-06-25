@@ -31,7 +31,7 @@ const AddSpost = () => {
     };
 
     // save spots in database
-    fetch("https://assignment-server-side-alpha.vercel.app/alltouristspots", {
+    fetch("https://assignrmnt-server.vercel.app/alltouristspots", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

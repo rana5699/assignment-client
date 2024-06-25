@@ -7,12 +7,13 @@ const TouristContainer = () => {
   const [loading, setLoading] = useState(true);
 
   const [touristSpots, setTouristSpots] = useState([]);
+  console.log("touristSpots:", touristSpots);
 
   useEffect(() => {
     const fetchTouristSpots = async () => {
       try {
         const response = await fetch(
-          "https://assignment-server-side-alpha.vercel.app/touristspot"
+          "https://assignrmnt-server.vercel.app/touristspot"
         );
         const spots = await response.json();
         setTouristSpots(spots);

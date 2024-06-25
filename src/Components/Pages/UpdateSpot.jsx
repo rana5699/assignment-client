@@ -57,7 +57,7 @@ const UpdateSpot = () => {
       totalVisitorsPerYear,
     };
 
-    fetch(`https://assignment-server-side-alpha.vercel.app/updatespot/${id}`, {
+    fetch(`https://assignrmnt-server.vercel.app/updatespot/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
