@@ -8,9 +8,7 @@ const CountryContainer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(
-      "https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/countrynames"
-    )
+    fetch("https://assignment-server-side-alpha.vercel.app/countrynames")
       .then((res) => res.json())
       .then((data) => {
         setNames(data);

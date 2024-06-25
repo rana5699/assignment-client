@@ -12,7 +12,7 @@ const MyList = () => {
 
   useEffect(() => {
     fetch(
-      `https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/alltouristspotss/${userEmail}`
+      `https://assignment-server-side-alpha.vercel.app/alltouristspotss/${userEmail}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -27,7 +27,7 @@ const MyList = () => {
 
   const handleDelete = (id) => {
     fetch(
-      `https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/alltouristspot/${id}`,
+      `https://assignment-server-side-alpha.vercel.app/alltouristspot/${id}`,
       {
         method: "DELETE",
         headers: {

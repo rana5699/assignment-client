@@ -9,9 +9,7 @@ const TouristContainer = () => {
   const [touristSpots, setTouristSpots] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/touristspot"
-    )
+    fetch("https://assignment-server-side-alpha.vercel.app/touristspot")
       .then((res) => res.json())
       .then((spots) => {
         setTouristSpots(spots);
@@ -40,7 +38,9 @@ const TouristContainer = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5">
         {touristSpots &&
-          touristSpots.map((spot) => <TouristSpot key={spot.id} spot={spot} />)}
+          touristSpots.map((spot) => (
+            <TouristSpot key={spot._id} spot={spot} />
+          ))}
       </div>
     </div>
   );

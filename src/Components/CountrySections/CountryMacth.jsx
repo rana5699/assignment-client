@@ -15,7 +15,7 @@ const CountryMatch = () => {
 
   useEffect(() => {
     fetch(
-      `https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/countryname/${nameConvention}`
+      `https://assignment-server-side-alpha.vercel.app/countryname/${nameConvention}`
     )
       .then((res) => res.json())
       .then((data) => {

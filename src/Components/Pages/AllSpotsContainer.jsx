@@ -6,9 +6,7 @@ const AllSpotsContainer = () => {
   const [spots, setSpots] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://assignment-server-side-llhkj7tiq-md-sohel-ranas-projects.vercel.app/alltouristspots"
-    )
+    fetch("https://assignment-server-side-alpha.vercel.app/alltouristspots")
       .then((res) => res.json())
       .then((data) => {
         setSpots(data);
