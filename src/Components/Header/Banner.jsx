@@ -15,7 +15,6 @@ AOS.init();
 const Banner = () => {
   const [banner, setBanner] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  console.log("banner:", banner);
 
   useEffect(() => {
     const fetchBanner = async () => {
