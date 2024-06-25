@@ -7,18 +7,24 @@ const TouristContainer = () => {
   const [loading, setLoading] = useState(true);
 
   const [touristSpots, setTouristSpots] = useState([]);
+  console.log("touristSpots:", touristSpots);
 
   useEffect(() => {
-    fetch("https://assignment-server-side-alpha.vercel.app/touristspot")
-      .then((res) => res.json())
-      .then((spots) => {
+    const fetchTouristSpots = async () => {
+      try {
+        const response = await fetch(
+          "https://assignment-server-side-alpha.vercel.app/touristspot"
+        );
+        const spots = await response.json();
         setTouristSpots(spots);
-        setLoading(false);
-      })
-      .catch((error) => {
+      } catch (error) {
         console.error("Error fetching tourist spots:", error);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+
+    fetchTouristSpots();
   }, []);
 
   if (loading) {
