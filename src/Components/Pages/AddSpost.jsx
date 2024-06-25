@@ -1,4 +1,5 @@
 import { toast } from "react-toastify";
+import HelmetTitle from "../Loader/HelmetTitle";
 
 const AddSpost = () => {
   const handleSubmit = (e) => {
@@ -51,6 +52,7 @@ const AddSpost = () => {
 
   return (
     <div>
+      <HelmetTitle title="Add Spot" />
       <div className="min-h-screen  flex items-center justify-center p-5 w-full md:w-11/12 mx-auto rounded-md my-5">
         <div
           className="bg-white p-8 rounded-lg shadow-2xl w-full md:w-8/12 lg:w-2/4"

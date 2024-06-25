@@ -3,6 +3,7 @@ import Loader from "../Loader/Loader";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
 import ListTable from "./ListTable";
+import HelmetTitle from "../Loader/HelmetTitle";
 
 const MyList = () => {
   const { user } = useContext(AuthContext);
@@ -45,6 +46,7 @@ const MyList = () => {
 
   return (
     <div className="w-full px-3 md:w-10/12 mx-auto my-5  p-2 rounded-md">
+      <HelmetTitle title="My List" />
       {mySpots.length > 0 ? (
         <div className="overflow-x-auto">
           <table className="table">

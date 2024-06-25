@@ -80,14 +80,6 @@ const Banner = () => {
                             : item?.description}
                           ...
                         </p>
-                        <button className="w-40 h-12 bg-white cursor-pointer rounded-3xl border-2 border-cyan-400 shadow-[inset_0px_-2px_0px_1px_#AB916C] group hover:bg-cyan-400 transition duration-300 ease-in-out">
-                          <Link
-                            to="/booking"
-                            className="font-medium text-[#333] group-hover:text-white font-jost"
-                          >
-                            Stay Booking
-                          </Link>
-                        </button>
                       </div>
                     </div>
                   </div>

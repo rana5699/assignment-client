@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import HelmetTitle from "../Loader/HelmetTitle";
 import DemoCard from "./DemoCard";
 
 const AllSpot = ({ item }) => {
@@ -13,15 +14,18 @@ const AllSpot = ({ item }) => {
   } = item;
 
   return (
-    <DemoCard
-      imageUrl={imageUrl}
-      touristSpotName={touristSpotName}
-      seasonality={seasonality}
-      totalVisitorsPerYear={totalVisitorsPerYear}
-      travelTime={travelTime}
-      averageCost={averageCost}
-      path={`/allspots/${_id}`}
-    />
+    <div>
+      <HelmetTitle title="All Spots" />
+      <DemoCard
+        imageUrl={imageUrl}
+        touristSpotName={touristSpotName}
+        seasonality={seasonality}
+        totalVisitorsPerYear={totalVisitorsPerYear}
+        travelTime={travelTime}
+        averageCost={averageCost}
+        path={`/allspots/${_id}`}
+      />
+    </div>
   );
 };
 
