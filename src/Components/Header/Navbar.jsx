@@ -74,20 +74,21 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-40 p-2 shadow rounded-box w-52"
             >
               {navLinks}
             </ul>
           </div>
 
-          <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal antialiased">
+          <h3 className="block font-ubuntu text-3xl font-semibold leading-snug tracking-normal antialiased">
             TravelMastery
           </h3>
         </div>
-        <div className="navbar-center hidden md:flex">
-          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <div className="navbar-center hidden md:flex ">
+          <ul className="menu menu-horizontal px-1 ">{navLinks}</ul>
         </div>
         <div className="navbar-end">
+          <ThemeToggle />
           {user ? (
             <div className="group relative cursor-pointer">
               <div
@@ -115,7 +116,6 @@ const Navbar = () => {
               <button className="btn btn-outline">Login</button>
             </NavLink>
           )}
-          <ThemeToggle />
         </div>
       </div>
     </div>

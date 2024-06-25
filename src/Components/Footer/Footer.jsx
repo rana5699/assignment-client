@@ -1,33 +1,59 @@
-import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded rounded-t-2xl">
-        <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <div className="grid grid-flow-col gap-4">
-            <Link>
-              <FaTwitter className="text-4xl" />
-            </Link>
-            <Link>
-              <FaYoutube className="text-4xl" />
-            </Link>
-            <Link>
-              <FaFacebook className="text-4xl" />
-            </Link>
+      <div className="bg-cyan-900 rounded-t-3xl ">
+        <div className="max-w-2xl mx-auto text-white py-10">
+          <div className="text-center">
+            <h3 className="text-3xl mb-3">
+              Download our{" "}
+              <span className="animate-bounce antialiased">
+                {" "}
+                TravelMastery{" "}
+              </span>
+              App
+            </h3>
+            <p>Embracing the Journey: The Essence of Travel Life.</p>
+            <div className="flex justify-center my-10">
+              <div className="flex items-center border w-auto rounded-lg px-4 py-2  mx-2">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/888/888857.png"
+                  className="w-7 md:w-8"
+                  alt="Google Play Store"
+                />
+                <div className="text-left ml-3">
+                  <p className="text-xs text-gray-200">Download on</p>
+                  <p className="text-sm md:text-base">Google Play Store</p>
+                </div>
+              </div>
+              <div className="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/888/888841.png"
+                  className="w-7 md:w-8"
+                  alt="Apple Store"
+                />
+                <div className="text-left ml-3">
+                  <p className="text-xs text-gray-200">Download on</p>
+                  <p className="text-sm md:text-base">Apple Store</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
-        <aside>
-          <p>Copyright © 2024 - All right reserved by troist.com ltd</p>
-        </aside>
-      </footer>
+          <div className="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+            <p className="order-2 md:order-1 mt-8 md:mt-0">
+              &copy; All rights contain have TravelMastery.Ltd
+            </p>
+            <div className="order-1 md:order-2">
+              <span className="px-2">About us</span>
+              <Link to="/contact">
+                <span className="px-2 border-l">Contact us</span>
+              </Link>
+              <span className="px-2 border-l">Privacy Policy</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

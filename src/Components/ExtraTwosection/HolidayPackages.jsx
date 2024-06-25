@@ -23,7 +23,16 @@ const HolidayPackages = () => {
         <div className="px-5 pt-2 flex flex-col">
           <div className="flex justify-between">
             <h2 className="font-semibold">Bangladesh</h2>
-            <h2 className="font-bold text-red-500 text-lg">$ 550</h2>
+            <div className="flex gap-5">
+              <h2 className="font-bold text-red-500 text-lg ">
+                {" "}
+                <strike>$ 550</strike>{" "}
+              </h2>
+              <h2 className="font-bold text-green-500 text-lg ">
+                {" "}
+                Now : $ 500{" "}
+              </h2>
+            </div>
           </div>
           <div className="text-left my-3">
             <p>
