@@ -6,7 +6,7 @@ const ChooseTour = () => {
   return (
     <div className="mt-8 ">
       <div
-        className="flex justify-center items-center h-[500px]  rounded-t-3xl"
+        className="flex justify-center items-center h-auto py-5 md:p-10  rounded-t-3xl"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/qMDTV1T/image-from-rawpixel-id-437302-jpeg.jpg)",
@@ -16,7 +16,7 @@ const ChooseTour = () => {
           width: "100%",
         }}
       >
-        <div className="text-white px-8">
+        <div className="text-white w-3/4 text-center">
           <h1 className="mb-5 text-5xl font-bold">Choose Tour</h1>
           <p className="mb-7 text-lg">
             Find your next travel adventure and make it memorable. Explore
@@ -24,7 +24,7 @@ const ChooseTour = () => {
             destinations.
           </p>
           <div className="">
-            <div className="flex justify-center items-center gap-x-20 mx-auto">
+            <div className="flex justify-center items-center gap-x-20 flex-wrap mx-auto">
               <div className="text-white cursor-pointer">
                 <FaPlaneLock className="text-5xl text-white  mx-auto mb-3" />
                 <p className="text-xl">Self-Guided</p>
