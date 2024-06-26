@@ -73,6 +73,7 @@ const AddSpost = () => {
                 type="text"
                 id="imageUrl"
                 name="imageUrl"
+                required
               />
             </div>
             <div className="mb-4">
@@ -87,6 +88,7 @@ const AddSpost = () => {
                 type="text"
                 id="touristSpotName"
                 name="touristSpotName"
+                required
               />
             </div>
             <div className="mb-4">
@@ -98,6 +100,7 @@ const AddSpost = () => {
                 type="text"
                 id="countryName"
                 name="countryName"
+                required
               />
             </div>
             <div className="mb-4">
@@ -109,6 +112,7 @@ const AddSpost = () => {
                 type="text"
                 id="location"
                 name="location"
+                required
               />
             </div>
             <div className="mb-4">
@@ -122,6 +126,7 @@ const AddSpost = () => {
                 className="w-full p-2 border border-cyan-400 rounded"
                 id="shortDescription"
                 name="shortDescription"
+                required
               ></textarea>
             </div>
             <div className="mb-4">
@@ -133,6 +138,7 @@ const AddSpost = () => {
                 type="number"
                 id="averageCost"
                 name="averageCost"
+                required
               />
             </div>
             <div className="mb-4">
@@ -143,6 +149,7 @@ const AddSpost = () => {
                 className="w-full p-2 border border-cyan-400 rounded"
                 id="seasonality"
                 name="seasonality"
+                required
               >
                 <option value="">Select seasonality</option>
                 <option value="summer">Summer</option>
@@ -158,6 +165,7 @@ const AddSpost = () => {
                 type="number"
                 id="travelTime"
                 name="travelTime"
+                required
               />
             </div>
             <div className="mb-4">
@@ -172,6 +180,7 @@ const AddSpost = () => {
                 type="number"
                 id="totalVisitorsPerYear"
                 name="totalVisitorsPerYear"
+                required
               />
             </div>
             <div className="mb-4">
@@ -183,6 +192,7 @@ const AddSpost = () => {
                 type="email"
                 id="userEmail"
                 name="userEmail"
+                required
               />
             </div>
             <div className="mb-6">
@@ -194,6 +204,7 @@ const AddSpost = () => {
                 type="text"
                 id="userName"
                 name="userName"
+                required
               />
             </div>
             <button

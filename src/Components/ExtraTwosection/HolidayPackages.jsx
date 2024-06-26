@@ -20,7 +20,7 @@ const HolidayPackages = ({ item }) => {
       <div className="transform transition duration-300 hover:scale-105 rounded-lg shadow-lg  w-full hover:shadow-xl bg-cyan-700 text-white mx-auto">
         <div className="m-2 h-3/6 rounded-lg relative   blur-sm hover:blur-none hover:transition hover:duration-300 ">
           <img
-            className="w-full rounded-t-2xl"
+            className="w-full rounded-t-2xl h-[350px] md:h-[450px] lg:h-[500px]"
             src={countryImage}
             alt={countryName}
           />

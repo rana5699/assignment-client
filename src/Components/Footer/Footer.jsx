@@ -1,3 +1,5 @@
+import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import { MdAddIcCall, MdOutgoingMail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -39,8 +41,27 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+            <div className="flex justify-around items-center flex-wrap">
+              <div>
+                <div className="flex items-center gap-3">
+                  <MdOutgoingMail className="text-3xl" />
+                  <p className="text-lg">ranaot56@gmail.com</p>
+                </div>
+                <div className="flex items-center gap-3 mt-1">
+                  <MdAddIcCall className="text-3xl" />
+                  <p className="text-lg">+880 17511 000 00</p>
+                </div>
+              </div>
+              <div>
+                <div className="flex justify-around gap-3">
+                  <FaFacebook className="text-3xl" />
+                  <FaYoutube className="text-3xl" />
+                  <FaTwitter className="text-3xl" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-white">
+          <div className="mt-14 flex flex-col md:flex-row md:justify-between items-center text-sm text-white">
             <p className="order-2 md:order-1 mt-8 md:mt-0">
               &copy; All rights contain have TravelMastery.Ltd
             </p>
