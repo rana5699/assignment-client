@@ -51,7 +51,7 @@ const DemoCard = ({
         <CardBody className="p-0 mx-auto md:mx-0">
           <Typography className="font-normal">
             <div className=" p-2">
-              <h2 className="text-3xl font-bold text-center  text-cyan-500 font-ubuntu">
+              <h2 className="text-3xl font-bold text-center  text-cyan-900 font-ubuntu">
                 <Typewriter
                   words={[touristSpotName]}
                   loop={5}
@@ -68,7 +68,7 @@ const DemoCard = ({
           <ul className="flex flex-col gap-4">
             <li className="flex items-center gap-4">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                <FaCheckCircle className="text-xl text-cyan-500" />
+                <FaCheckCircle className="text-xl text-cyan-900" />
               </span>
               {countryName ? (
                 <Typography className="font-extrabold text-cyan-800 font-ubuntu">

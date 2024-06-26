@@ -30,8 +30,8 @@ const CountryCard = ({ item }) => {
             />
           </CardHeader>
           <CardBody
-            className={`mt-3 font-normal ${
-              isDark ? "bg-gray-600 text-white" : ""
+            className={`font-normal ${
+              isDark ? "bg-gray-600 text-white" : "bg-cyan-700 text-white"
             }`}
           >
             <Typography variant="h4" color="blue-gray">

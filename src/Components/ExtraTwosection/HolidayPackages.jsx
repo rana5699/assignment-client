@@ -6,7 +6,7 @@ import { GrLocation } from "react-icons/gr";
 const HolidayPackages = () => {
   return (
     <div className="mt-10">
-      <div className="transform transition duration-300 hover:scale-110 rounded-lg shadow-lg  w-full hover:shadow-xl bg-white">
+      <div className="transform transition duration-300 hover:scale-110 rounded-lg shadow-lg  w-full hover:shadow-xl bg-cyan-700 text-white">
         <div className="m-2 h-3/6 rounded-lg relative   blur-sm hover:blur-none hover:transition hover:duration-300 ">
           <img
             className="w-full rounded-t-2xl"
@@ -24,14 +24,11 @@ const HolidayPackages = () => {
           <div className="flex justify-between">
             <h2 className="font-semibold">Bangladesh</h2>
             <div className="flex gap-5">
-              <h2 className="font-bold text-red-500 text-lg ">
+              <h2 className="font-bold text-black text-lg ">
                 {" "}
-                <strike>$ 550</strike>{" "}
+                Regular : <strike>$ 550</strike>{" "}
               </h2>
-              <h2 className="font-bold text-green-500 text-lg ">
-                {" "}
-                Now : $ 500{" "}
-              </h2>
+              <h2 className="font-bold text-white text-lg "> Now : $ 500 </h2>
             </div>
           </div>
           <div className="text-left my-3">
@@ -41,7 +38,7 @@ const HolidayPackages = () => {
             </p>
           </div>
         </div>
-        <div className="bg-cyan-300 text-left flex justify-between py-4 px-5">
+        <div className="bg-cyan-500 hover:bg-cyan-900 text-left flex justify-between py-4 px-5">
           <div className="text-lg font-bold flex items-center gap-3">
             <BsClock className="text-2xl " />
             <p>5 Days</p>
