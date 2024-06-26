@@ -1,4 +1,5 @@
 import CountryContainer from "../CountrySections/CountryContainer";
+import ChooseTour from "../ExtraTwosection/ChooseTour";
 import HolidayContainer from "../ExtraTwosection/HolidayContainer";
 import Banner from "../Header/Banner";
 import HelmetTitle from "../Loader/HelmetTitle";
@@ -13,6 +14,7 @@ const Home = () => {
         <TouristContainer />
         <CountryContainer />
         <HolidayContainer />
+        <ChooseTour />
       </div>
     </div>
   );

@@ -34,11 +34,7 @@ const CountryContainer = () => {
     <div className="my-5">
       <Container
         title="Destination Countries"
-        description="Traveling is one of the most enriching experiences one can have. It
-            opens up a world of new cultures, cuisines, and breathtaking
-            landscapes. Tourist spots around the globe attract millions of
-            visitors every year, each offering unique experiences and memories
-            to cherish."
+        description="These countries are often sought after for their economic opportunities, safety, quality of life, or cultural attractions. They are popular locations for individuals seeking employment, education, better living conditions, or simply as travel destinations. "
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3">
         {names &&

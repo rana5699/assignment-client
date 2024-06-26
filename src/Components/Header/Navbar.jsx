@@ -24,7 +24,11 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive, isPending }) =>
-            `nav-link ${isActive ? "active" : ""} ${isPending ? "pending" : ""}`
+            `nav-link ${
+              isActive
+                ? "bg-cyan-900 text-white font-bold"
+                : "font-bold text-cyan-900"
+            } ${isPending ? "pending" : ""}`
           }
           to="/"
         >
@@ -34,7 +38,11 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive, isPending }) =>
-            `nav-link ${isActive ? "active" : ""} ${isPending ? "pending" : ""}`
+            `nav-link ${
+              isActive
+                ? "bg-cyan-900 text-white font-bold"
+                : "font-bold text-cyan-900"
+            } ${isPending ? "pending" : ""}`
           }
           to="/allspots"
         >
@@ -44,7 +52,11 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive, isPending }) =>
-            `nav-link ${isActive ? "active" : ""} ${isPending ? "pending" : ""}`
+            `nav-link ${
+              isActive
+                ? "bg-cyan-900 text-white font-bold"
+                : "font-bold text-cyan-900"
+            } ${isPending ? "pending" : ""}`
           }
           to="/addspot"
         >
@@ -54,7 +66,11 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive, isPending }) =>
-            `nav-link ${isActive ? "active" : ""} ${isPending ? "pending" : ""}`
+            `nav-link ${
+              isActive
+                ? "bg-cyan-900 text-white font-bold"
+                : "font-bold text-cyan-900"
+            } ${isPending ? "pending" : ""}`
           }
           to="/mylist"
         >
@@ -80,7 +96,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <h3 className="block font-ubuntu text-3xl font-semibold leading-snug tracking-normal antialiased">
+          <h3 className="block font-ubuntu  font-semibold leading-snug tracking-normal antialiased text-cyan-900 text-sm md:text-2xl lg:text-3xl">
             TravelMastery
           </h3>
         </div>
